@@ -1,0 +1,71 @@
+name: Update VPN Configs
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # каждые 2 часа
+  workflow_dispatch:          # кнопка ручного запуска
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout my repo
+        uses: actions/checkout@v4
+
+      - name: Download configs from source
+        run: |
+          mkdir -p configs
+
+          # CIDR подписки для белых списков (мобильный интернет)
+          curl -fsSL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt" \
+            -o configs/mobile-whitelist-1.txt
+
+          curl -fsSL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt" \
+            -o configs/mobile-whitelist-2.txt
+
+          curl -fsSL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt" \
+            -o configs/white-cidr-checked.txt
+
+          # Обычные чёрные списки (для обычной блокировки)
+          curl -fsSL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-Freeser-RU-mobile.txt" \
+            -o configs/blacklist-mobile.txt
+
+          echo "✅ Обновлено: $(date)" > configs/last_updated.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add configs/
+          git diff --cached --quiet || git commit -m "🔄 Auto-update configs $(date +'%Y-%m-%d %H:%M')"
+          git push
+```
+
+---
+
+## Шаг 3 — Запусти первый раз вручную
+
+В репозитории → вкладка **Actions** → выбери **Update VPN Configs** → нажми **Run workflow**
+
+Через 30 секунд в папке `configs/` появятся файлы.
+
+---
+
+## Шаг 4 — Твои ссылки на подписку
+
+После успешного запуска твои ссылки будут такого формата:
+```
+# Для белого списка (мобильный — основной)
+https://raw.githubusercontent.com/mmaksim9191/my-vpn-configs/main/configs/mobile-whitelist-1.txt
+
+# Белый список #2
+https://raw.githubusercontent.com/mmaksim9191/my-vpn-configs/main/configs/mobile-whitelist-2.txt
+
+# Проверенные CIDR
+https://raw.githubusercontent.com/mmaksim9191/my-vpn-configs/main/configs/white-cidr-checked.txt
+
+# Для обычных блокировок
+https://raw.githubusercontent.com/mmaksim9191/my-vpn-configs/main/configs/blacklist-mobile.txt
