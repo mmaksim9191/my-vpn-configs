@@ -42,9 +42,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          git pull --rebase
+          git pull origin main --rebase
           git add configs/
 
           git diff --cached --quiet || git commit -m "🔄 Auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
 
-          git push
+          git push origin main
