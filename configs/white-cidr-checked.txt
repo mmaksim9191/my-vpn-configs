@@ -1,11 +1,6 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-09-22 / 17:10 (Moscow)
-# Количество: 5
+# Date/Time: 2026-09-22 / 21:30 (Moscow)
+# Количество: 0
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
-vless://a76f6959-7d88-40c5-8984-4d888aa42389@90.156.218.106:2103?security=reality&encryption=none&pbk=4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=747f0e.relay-edge.net&sid=11f303a9ff001d7c&fp=android#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%5B%2ACIDR%5D%20VK
-vless://a76f6959-7d88-40c5-8984-4d888aa42389@90.156.218.106:2103?security=reality&encryption=none&pbk=4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=747f0e.relay-edge.net&sid=11f303a9ff001d7c&fp=chrome#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%5B%2ACIDR%5D%20VK
-vless://a76f6959-7d88-40c5-8984-4d888aa42389@90.156.218.106:2103?security=reality&encryption=none&pbk=4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=747f0e.relay-edge.net&sid=11f303a9ff001d7c&fp=edge#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%5B%2ACIDR%5D%20VK
-vless://a76f6959-7d88-40c5-8984-4d888aa42389@90.156.218.106:2103?security=reality&encryption=none&pbk=4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=747f0e.relay-edge.net&sid=11f303a9ff001d7c&fp=ios#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%5B%2ACIDR%5D%20VK
-vless://a76f6959-7d88-40c5-8984-4d888aa42389@90.156.218.106:2103?security=reality&encryption=none&pbk=4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=747f0e.relay-edge.net&sid=11f303a9ff001d7c&fp=safari#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%7C%20%5B%2ACIDR%5D%20VK
