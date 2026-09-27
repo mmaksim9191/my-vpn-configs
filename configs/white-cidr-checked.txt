@@ -1,6 +1,10 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-09-27 / 02:31 (Moscow)
-# Количество: 0
+# Date/Time: 2026-09-27 / 10:08 (Moscow)
+# Количество: 4
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
+vless://9e4f675b-d6bf-42d1-be55-389f622783af@212.233.98.14:443?security=tls&type=ws&sni=chaurma.sowt.app&path=%2Fgateway%2Fv1%2Fws%2F4ce5d6fbd2426f525eb0a536c35f9407&host=chaurma.sowt.app&fp=android#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D%20VK
+vless://9e4f675b-d6bf-42d1-be55-389f622783af@212.233.98.14:443?security=tls&type=ws&sni=chaurma.sowt.app&path=%2Fgateway%2Fv1%2Fws%2F4ce5d6fbd2426f525eb0a536c35f9407&host=chaurma.sowt.app&fp=ios#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20%5B%2ACIDR%5D%20VK
+vless://9e4f675b-d6bf-42d1-be55-389f622783af@212.233.98.14:443?security=tls&type=ws&sni=chaurma.sowt.app&path=%2Fgateway%2Fv1%2Fws%2F4ce5d6fbd2426f525eb0a536c35f9407&host=chaurma.sowt.app&fp=edge#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK
+vless://9e4f675b-d6bf-42d1-be55-389f622783af@212.233.98.14:443?security=tls&type=ws&sni=chaurma.sowt.app&path=%2Fgateway%2Fv1%2Fws%2F4ce5d6fbd2426f525eb0a536c35f9407&host=chaurma.sowt.app&fp=firefox#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK
